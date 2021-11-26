@@ -9,13 +9,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Your app title -->
     <title>My App</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="node_modules\framework7\framework7-bundle.min.css">
     <!-- Path to your custom app styles-->
-    <!-- <link rel="stylesheet" href="path/to/my-app.css"> -->
+    <link rel="stylesheet" href="index.css">
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -27,13 +31,6 @@
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="home" class="page">
 
-                <!-- Top Navbar -->
-                <div class="navbar">
-                    <div class="navbar-bg"></div>
-                    <div class="navbar-inner">
-                        <div class="title">Awesome App</div>
-                    </div>
-                </div>
 
                 <!-- Bottom Toolbar -->
                 <div class="toolbar toolbar-bottom">
@@ -41,14 +38,155 @@
                         <!-- Toolbar links -->
                         <a href="#" class="link">Link 1</a>
                         <a href="#" class="link">Link 2</a>
+                        <a href="#" class="link">Link 2</a>
+                        <a href="#" class="link">Link 2</a>
+                        <a href="#" class="link">Link 2</a>
                     </div>
                 </div>
 
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <p>Page content goes here</p>
-                    <!-- Link to another page -->
-                    <a href="/about/">About app</a>
+                    <!-- top content -->
+                    <div class="block block-strong">
+                        <div class="row">
+                            <div id="carouselExampleIndicators" class="col carousel slide" data-ride="carousel"
+                                data-interval="1500" data-pause="hover">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-10 " src="props\eg-img.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-10" src="props\eg-img.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-10" src="props\eg-img.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-frame">
+                                <button class="col button button-fill">我要发布</button>
+                            </div>
+                        </div>
+                        <div class="row" type="advs">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="props\eg-img.jpg">
+                                    <p class="card-text">Lili</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="props\eg-img.jpg">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="props\eg-img.jpg">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="props\eg-img.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" type="advs">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="props\eg-img.jpg">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="props\eg-img.jpg">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="props\eg-img.jpg">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="props\eg-img.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" type="side">
+                            <div class="row-frame">
+                                <button class="col button button-fill">更多中介</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second layer -->
+                    <div class="block block-strong">
+                        <div class="row" type="guide">
+                            <div class="col">
+                                <div class="card" type="guide">
+                                    <span class="material-icons md-36">
+                                        paid
+                                    </span>
+                                    <p class="card-text" type="guide">房屋贷款</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="material-icons md-36">
+                                        handyman
+                                        </span>
+                                    <p class="card-text" type="guide">检房装修</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="material-icons md-36">
+                                        corporate_fare
+                                        </span>
+                                    <p class="card-text" type="guide">建筑家装</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="material-icons md-36">
+                                        groups
+                                        </span>
+                                    <p class="card-text" type="guide">房产律师</p>
+                                </div>
+                            </div>
+                            <div class="col" type="guide">
+                                <div class="card" >
+                                    <span class="material-icons md-36">
+                                        cleaning_services
+                                        </span>
+                                    <p class="card-text" type="guide">清洁搬家</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block block-strong">
+                        <div class="searchbar searchbar-inline">
+                            <div class="row">
+                                <div class="col-85">
+                                    <div class="searchbar-input-wrap">
+                                        <input type="search" placeholder="单行输入" style="background-color: white; padding: 2px; border: 1px solid; border-radius: 0%;"/>
+                                      </div>
+                                </div>
+                                <div class="col-15">
+                                    <span class="material-icons md-24">
+                                        sort
+                                    </span>
+                                </div>
+                              </div>
+                            
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,9 +219,15 @@
 
         var mainView = app.views.create('.view-main');
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
